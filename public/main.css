@@ -1,0 +1,159 @@
+html, body {
+  position: relative;
+  height: 100%;
+}
+body {
+  background: white;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color:#000;
+  margin: 0;
+  padding: 0;
+}
+
+.jumbotron {
+  font-family: 'Satisfy', cursive;
+  text-align: center;
+  color: white;
+  background-color: grey; /* Used if the image is unavailable */
+  height: 300px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+/* Header images */
+
+.greyscale {
+  /* filter: greyscale(100%); */
+  margin: 10px;
+}
+
+#home-header {
+  background-image: url("../images/mountains.jpg");
+}
+
+#tree-header {
+  background-image: url("../images/tree6.jpg");
+}
+
+#flower-header {
+  background-image: url("../images/flower5.jpg");
+}
+
+#bird-header {
+  background-image: url("../images/bird2.jpg");
+}
+
+#horse-header {
+  background-image: url("../images/horse5.jpg");
+}
+
+#bee-header {
+  background-image: url("../images/bee5.jpg");
+}
+
+#beach-header {
+  background-image: url("../images/beach1.jpg");
+}
+
+#star-header {
+  background-image: url("../images/star10.jpg");
+}
+
+#mountain-header {
+  background-image: url("../images/mountain2.jpg");
+}
+
+#cave-header {
+  background-image: url("../images/cave6.jpg");
+}
+
+#sky-header {
+  background-image: url("../images/sky5.jpg");
+}
+
+/* Swiper stuff */
+
+.swiper-container {
+  height: 40%;
+  margin-top: 50px;
+}
+
+.swiper-slide {
+  border-radius: 20px;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  position: relative;
+}
+
+.swiper-slide h2 {
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Satisfy', cursive;
+}
+
+a {
+  overflow: hidden;
+}
+
+/* Flexbox gallery */
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul:after {
+    content:'';
+    display:block;
+    flex-grow: 10;
+}
+
+li {
+  height: 250px;
+  flex-grow: 1;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+li img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+/* bottom back button */
+
+#back {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+#back-parent {
+  padding-top: 100px;
+}
